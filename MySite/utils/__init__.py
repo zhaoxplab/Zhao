@@ -30,7 +30,7 @@ def create_app():
 
     # 初始化orm
     # SQLAlchemy注册
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:100798@47.97.166.98:3306/zhaoxp?charset=utf8mb4'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:pwd@local:port/zhaoxp?charset=utf8mb4'
     # 设置数据库追踪信息，压制警告
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
     db.init_app(app)
